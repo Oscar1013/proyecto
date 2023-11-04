@@ -95,14 +95,13 @@ body{
         flex-direction: row;
         .carousel-inner{
             position: relative;
-            width: 1000;
-            height: 1200;
+            width: 700;
             margin-left: 50;
             margin-right: 50;
         }
         p{
             font-size: 2vw;
-            margin-top: 350;
+            margin-top: 270;
             color: #fff;
             display: flex;
             justify-content: center;
@@ -170,23 +169,15 @@ body{
             display: flex;
             flex-direction: column;
             width: 100%;
-            .carousel-indicators{
-                top: 23%;
-
-            }
             .carousel-inner{    
-                width: 250;
-            }
-            .carousel-control-prev{
-                top: -900;
-            }
-            .carousel-control-next{
-                top: -900;
+                position: relative;
+                width: 70vw;
+                margin-right: 10;
             }
             p{
-                position: absolute;
+                position: relative;
                 font-size: 18px;
-                top: 380;
+                margin-top: 0;
             }
         }
     }

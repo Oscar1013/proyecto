@@ -85,14 +85,13 @@ body aside {
 }
 body aside .carousel-inner {
   position: relative;
-  width: 1000;
-  height: 1200;
+  width: 700;
   margin-left: 50;
   margin-right: 50;
 }
 body aside p {
   font-size: 2vw;
-  margin-top: 350;
+  margin-top: 270;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -146,22 +145,15 @@ body aside p {
     flex-direction: column;
     width: 100%;
   }
-  body aside .carousel-indicators {
-    top: 23%;
-  }
   body aside .carousel-inner {
-    width: 250;
-  }
-  body aside .carousel-control-prev {
-    top: -900;
-  }
-  body aside .carousel-control-next {
-    top: -900;
+    position: relative;
+    width: 70vw;
+    margin-right: 10;
   }
   body aside p {
-    position: absolute;
+    position: relative;
     font-size: 18px;
-    top: 380;
+    margin-top: 0;
   }
 }
 
