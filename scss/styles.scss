@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+
+.link-menu:hover{
+        zoom: 120%;
+        border-bottom: 2px solid #fff;
+    }
+
+body{
+    background-color: #333;
+
+    /*header-navbar*/
+    header{
+        nav{
+            .toggle-menu{
+                position: absolute;
+                display: none;
+                top: 1rem;
+                right: 1rem;
+                cursor: pointer;
+                width: 50px;
+            }
+            .menu{
+                position: relative;
+                width: 100%;
+                list-style: none;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-left: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: lightcoral;
+                z-index: 100;
+                    
+                li{
+                    padding: 1em;
+                }
+
+                .logo{
+                    width: 100;
+                }
+
+
+            }
+        }
+    }
+    /*header-navbar*/
+
+        /*video/frase*/
+    main{
+        h1{
+                color: #fff;
+                font-size: 4vw;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
+        }    
+        .video{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                iframe{
+                    border-radius: 5%;
+                    width: 1250px;
+                    height: 750px;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+        }
+    }
+        /*video/frase*/
+
+        /*carrusel*/
+    aside{
+        margin-top: 100;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .carousel-inner{
+            position: relative;
+            width: 1000;
+            height: 1200;
+            margin-left: 50;
+            margin-right: 50;
+        }
+        p{
+            font-size: 2vw;
+            margin-top: 350;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+    }
+        /*carrusel*/
+
+}
+
+@media screen and (max-width: 768px){    
+    body{
+
+        /*header-navbar*/
+        header{
+            nav{
+                .toggle-menu{
+                    position: fixed;
+                    display: flex;
+                    width: 25px;
+                    z-index: 1000;
+                }
+                .menu{
+                    position: fixed;
+                    flex-direction: column;
+                    transition: transform 0.3s;
+                    transform: translateX(500%);
+
+                    .logo{
+                        width: 25vw;
+                    }
+                }
+
+                .menu--show{
+                    transform: translateX(0);
+                }
+            }
+        }
+        /*header-navbar*/
+
+        /*video/frase*/
+        main{
+            margin-top:60 ;
+            
+            .video{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                iframe{
+                    width: 470;
+                    height: 250;
+                    margin-left: 25px;
+                    margin-right: 25px;
+                }
+                
+            }
+            
+        }
+        /*video/frase*/
+
+        aside{
+            margin-top: 25;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .carousel-indicators{
+                top: 23%;
+
+            }
+            .carousel-inner{    
+                width: 250;
+            }
+            .carousel-control-prev{
+                top: -900;
+            }
+            .carousel-control-next{
+                top: -900;
+            }
+            p{
+                position: absolute;
+                font-size: 18px;
+                top: 380;
+            }
+        }
+    }
+}
