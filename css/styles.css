@@ -1,3 +1,6 @@
+/*variables
+$color-primario:#000000
+variables*/
 * {
   margin: 0;
   padding: 0;
@@ -110,11 +113,12 @@ body aside p {
   body header nav .toggle-menu {
     position: fixed;
     display: flex;
-    width: 25px;
+    width: 35px;
     z-index: 1000;
   }
   body header nav .menu {
     position: fixed;
+    top: 0;
     flex-direction: column;
     transition: transform 0.3s;
     transform: translateX(500%);
@@ -149,6 +153,7 @@ body aside p {
     position: relative;
     width: 70vw;
     margin-right: 10;
+    z-index: -1000;
   }
   body aside p {
     position: relative;

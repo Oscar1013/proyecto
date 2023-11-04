@@ -1,3 +1,7 @@
+/*variables
+$color-primario:#000000
+variables*/
+
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +21,6 @@ a{
         zoom: 120%;
         border-bottom: 2px solid #fff;
     }
-
 body{
     background-color: #333;
 
@@ -52,8 +55,6 @@ body{
                 .logo{
                     width: 100;
                 }
-
-
             }
         }
     }
@@ -123,11 +124,12 @@ body{
                 .toggle-menu{
                     position: fixed;
                     display: flex;
-                    width: 25px;
+                    width: 35px;
                     z-index: 1000;
                 }
                 .menu{
                     position: fixed;
+                    top: 0;
                     flex-direction: column;
                     transition: transform 0.3s;
                     transform: translateX(500%);
@@ -171,8 +173,10 @@ body{
             width: 100%;
             .carousel-inner{    
                 position: relative;
+
                 width: 70vw;
                 margin-right: 10;
+                z-index: -1000;
             }
             p{
                 position: relative;
