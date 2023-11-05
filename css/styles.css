@@ -29,6 +29,8 @@ body {
   /*video/frase*/
   /*carrusel*/
   /*carrusel*/
+  /*mapa*/
+  /*mapa*/
 }
 body header nav .toggle-menu {
   position: absolute;
@@ -101,6 +103,21 @@ body aside p {
   text-align: center;
   margin-right: 30px;
   margin-left: 30px;
+}
+body .widget {
+  margin-top: 100;
+  margin-left: 50;
+  margin-right: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .widget h3 {
+  color: #fff;
+  font-size: 2vw;
+}
+body .widget iframe {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
