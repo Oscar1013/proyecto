@@ -114,7 +114,7 @@ body{
         /*carrusel*/
 
         /*tarjetas*/
-        .info{
+        .infor{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -262,6 +262,7 @@ body{
         }
         /*video/frase*/
 
+        /*carrusel*/
         aside{
             margin-top: 25;
             display: flex;
@@ -280,14 +281,34 @@ body{
                 margin-top: 0;
             }
         }
+        /*carrusel*/
 
-        .widget{
+        /*tarjetas*/
+        .infor{
             h3{
-                font-size: 5vw;
+                margin-top: 15;
+                font-size: 8vw;
+            }
+            .tarjetas{
+                display: flex;
+                flex-direction: column;
+                .card{
+                    margin-top: 5;
+                }
+            }
+        }
+        /*tarjetas*/
+
+        /*mapa*/
+        .widget{
+            margin-top: 15;
+            h3{
+                font-size: 6vw;
             }
             iframe{
                 height: 300;
             }
         }
+        /*mapa*/
     }
 }

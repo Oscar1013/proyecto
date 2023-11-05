@@ -106,24 +106,24 @@ body aside p {
   margin-right: 30px;
   margin-left: 30px;
 }
-body .info {
+body .infor {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body .info h3 {
+body .infor h3 {
   margin-top: 100;
   font-size: 5vw;
 }
-body .info .tarjetas {
+body .infor .tarjetas {
   margin-top: 10;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-body .info .tarjetas .card {
+body .infor .tarjetas .card {
   width: 17em;
   height: 22.5em;
   background: #171717;
@@ -134,14 +134,14 @@ body .info .tarjetas .card {
   display: flex;
   flex-direction: column;
 }
-body .info .tarjetas .card span {
+body .infor .tarjetas .card span {
   font-weight: bold;
   color: white;
   text-align: center;
   display: block;
   font-size: 1em;
 }
-body .info .tarjetas .card .info {
+body .infor .tarjetas .card .info {
   font-weight: 400;
   color: white;
   display: block;
@@ -149,24 +149,24 @@ body .info .tarjetas .card .info {
   font-size: 0.72em;
   margin: 1em;
 }
-body .info .tarjetas .card .img {
+body .infor .tarjetas .card .img {
   width: 4.8em;
   height: 4.8em;
   background: white;
   border-radius: 15px;
   margin: auto;
 }
-body .info .tarjetas .card .share {
+body .infor .tarjetas .card .share {
   margin-top: 1em;
   display: flex;
   justify-content: center;
   gap: 1em;
 }
-body .info .tarjetas .card a {
+body .infor .tarjetas .card a {
   color: white;
   transition: 0.4s ease-in-out;
 }
-body .info .tarjetas button {
+body .infor .tarjetas button {
   padding: 0.8em 1.7em;
   display: block;
   margin: auto;
@@ -199,6 +199,12 @@ body .widget iframe {
     /*header-navbar*/
     /*video/frase*/
     /*video/frase*/
+    /*carrusel*/
+    /*carrusel*/
+    /*tarjetas*/
+    /*tarjetas*/
+    /*mapa*/
+    /*mapa*/
   }
   body header nav .toggle-menu {
     position: fixed;
@@ -250,8 +256,22 @@ body .widget iframe {
     font-size: 18px;
     margin-top: 0;
   }
+  body .infor h3 {
+    margin-top: 15;
+    font-size: 8vw;
+  }
+  body .infor .tarjetas {
+    display: flex;
+    flex-direction: column;
+  }
+  body .infor .tarjetas .card {
+    margin-top: 5;
+  }
+  body .widget {
+    margin-top: 15;
+  }
   body .widget h3 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   body .widget iframe {
     height: 300;
