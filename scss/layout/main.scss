@@ -1,0 +1,27 @@
+/*video/frase*/
+main{
+    h1{
+            color: #fff;
+            font-size: 4vw;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+    }    
+    .video{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            iframe{
+                border-radius: 5%;
+                width: 1250px;
+                height: 750px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+    }
+}
+    /*video/frase*/

@@ -1,0 +1,20 @@
+/*mapa*/
+.widget {
+  margin-top: 100;
+  margin-left: 50;
+  margin-right: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.widget h3 {
+  color: #fff;
+  font-size: 2vw;
+}
+.widget iframe {
+  width: 100%;
+}
+
+/*mapa*/
+
+/*# sourceMappingURL=widget-2.css.map */

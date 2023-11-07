@@ -1,0 +1,27 @@
+/*carrusel*/
+aside {
+  margin-top: 100;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+aside .carousel-inner {
+  position: relative;
+  width: 700;
+  margin-left: 50;
+  margin-right: 50;
+}
+aside p {
+  font-size: 2vw;
+  margin-top: 270;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+/*carrusel*/
+
+/*# sourceMappingURL=aside.css.map */
