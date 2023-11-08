@@ -97,6 +97,21 @@
             }
         }
         /*mapa*/
+
+        /*footer*/
+        footer{
+            position: relative;
+            bottom: 0;
+            button{
+                display: none;
+            }
+            .info{
+                text-align: center;
+                font-size: 5vw;
+
+            }
+        }
+        /*footer*/
     }
 }
 /*medium-celulares*/
