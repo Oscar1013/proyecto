@@ -17,23 +17,26 @@
         .card {
             width: 17em;
             height: 22.5em;
-            background: #171717;
+            background: #000000;
             transition: 1s ease-in-out;
             clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
             border-top-right-radius: 20px;
             border-bottom-left-radius: 20px;
             display: flex;
             flex-direction: column;
+            margin-left: 50;
+            margin-right: 50;
+            font-size: 1.2vw;
             span {
                 font-weight: bold;
-                color: white;
+                color: $color-secundario;
                 text-align: center;
                 display: block;
                 font-size: 1em;
             }
             .info {
                 font-weight: 400;
-                color: white;
+                color: $color-secundario;
                 display: block;
                 text-align: center;
                 font-size: 0.72em;
@@ -42,7 +45,7 @@
             .img {
                 width: 4.8em;
                 height: 4.8em;
-                background: white;
+                background: $color-secundario;
                 border-radius: 15px;
                 margin: auto;
             }
@@ -53,7 +56,7 @@
                 gap: 1em;
             }
             a {
-                color: white;
+                color: $color-secundario;
                 transition: .4s ease-in-out;
                 }
             }

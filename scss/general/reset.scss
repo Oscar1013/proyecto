@@ -1,0 +1,23 @@
+*{
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+a{
+    color: $color-secundario;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+
+.link-menu:hover{
+        zoom: 120%;
+        border-bottom: 2px solid $color-secundario;
+    }
+body{
+    background-color: $color-primario;       
+}

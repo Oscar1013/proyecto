@@ -1,0 +1,126 @@
+/*medium-celulares*/
+@media screen and (max-width: 768px){    
+    body{
+        /*header-navbar*/
+        header{
+            nav{
+                .toggle-menu{
+                    position: fixed;
+                    display: flex;
+                    width: 35px;
+                    z-index: 1000;
+                }
+                .menu{
+                    position: fixed;
+                    top: 0;
+                    flex-direction: column;
+                    transition: transform 0.3s;
+                    transform: translateX(500%);
+                    font-size: 7vw;
+
+                    .logo{
+                        width: 25vw;
+                    }
+                }
+
+                .menu--show{
+                    transform: translateX(0);
+                }
+            }
+        }
+        /*header-navbar*/
+
+        /*video/frase*/
+        main{
+            margin-top:60 ;
+            
+            .video{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                iframe{
+                    width: 470;
+                    height: 250;
+                    margin-left: 25px;
+                    margin-right: 25px;
+                }
+                
+            }
+            
+        }
+        /*video/frase*/
+
+        /*carrusel*/
+        aside{
+            margin-top: 25;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .carousel-inner{    
+                position: relative;
+                width: 70vw;
+                margin-right: 10;
+                z-index: -1000;
+            }
+            p{
+                position: relative;
+                font-size: 18px;
+            }
+        }
+        /*carrusel*/
+
+        /*tarjetas*/
+        .infor{
+            h3{
+                margin-top: 15;
+                font-size: 8vw;
+            }
+            .tarjetas{
+                display: flex;
+                flex-direction: column;
+                .card{
+                    margin-top: 5;
+                    font-size: 4vw;
+                }
+            }
+        }
+        /*tarjetas*/
+
+        /*mapa*/
+        .widget{
+            margin-top: 15;
+            h3{
+                font-size: 6vw;
+            }
+            iframe{
+                height: 300;
+            }
+        }
+        /*mapa*/
+    }
+}
+/*medium-celulares*/
+
+/*large*/
+@media screen and (max-width: 992px){
+    body{
+        aside{
+            margin-top: 25;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .carousel-inner{    
+                position: relative;
+                width: 70vw;
+                margin-right: 10;
+                z-index: -1000;
+            }
+            p{
+                position: relative;
+                font-size: 18px;
+                margin-top: 0;
+            }
+        }
+
+    }
+}

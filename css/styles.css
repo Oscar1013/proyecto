@@ -1,7 +1,5 @@
-/*variables
-$color-primario:#000000;
-/*variables*/
 * {
+  font-family: "Chakra Petch", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -11,20 +9,200 @@ $color-primario:#000000;
 }
 
 a {
-  color: white;
+  color: #fffbfc;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .link-menu:hover {
   zoom: 120%;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fffbfc;
 }
 
 body {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.8431372549);
 }
 
+header nav .toggle-menu {
+  position: absolute;
+  display: none;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  width: 50px;
+}
+header nav .menu {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fb3640;
+  z-index: 100;
+  font-size: 1.25vw;
+}
+header nav .menu li {
+  padding: 1em;
+}
+header nav .menu .logo {
+  width: 3.75vw;
+}
+
+/*carrusel*/
+aside {
+  margin-top: 100;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+aside .carousel-inner {
+  width: 700;
+}
+aside .carousel-inner img {
+  position: relative;
+  width: 1;
+  margin-left: 50;
+  margin-right: 50;
+}
+aside p {
+  min-width: 100;
+  font-size: 2vw;
+  margin-top: 100;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+/*carrusel*/
+/*video/frase*/
+main h1 {
+  color: #fffbfc;
+  font-size: 4vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+main .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .video iframe {
+  border-radius: 5%;
+  width: 1250px;
+  height: 750px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*video/frase*/
+/*tarjetas*/
+.infor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.infor h3 {
+  margin-top: 100;
+  font-size: 5vw;
+}
+.infor .tarjetas {
+  margin-top: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.infor .tarjetas .card {
+  width: 17em;
+  height: 22.5em;
+  background: #000000;
+  transition: 1s ease-in-out;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50;
+  margin-right: 50;
+  font-size: 1.2vw;
+}
+.infor .tarjetas .card span {
+  font-weight: bold;
+  color: #fffbfc;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+.infor .tarjetas .card .info {
+  font-weight: 400;
+  color: #fffbfc;
+  display: block;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 1em;
+}
+.infor .tarjetas .card .img {
+  width: 4.8em;
+  height: 4.8em;
+  background: #fffbfc;
+  border-radius: 15px;
+  margin: auto;
+}
+.infor .tarjetas .card .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.infor .tarjetas .card a {
+  color: #fffbfc;
+  transition: 0.4s ease-in-out;
+}
+.infor .tarjetas button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: 0.4s ease-in-out;
+}
+
+/*tarjetas*/
+/*mapa*/
+.widget {
+  margin-top: 100;
+  margin-left: 50;
+  margin-right: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.widget h3 {
+  color: #fff;
+  font-size: 2vw;
+}
+.widget iframe {
+  width: 100%;
+}
+
+/*mapa*/
+/*medium-celulares*/
 @media screen and (max-width: 768px) {
   body {
     /*header-navbar*/
@@ -50,6 +228,7 @@ body {
     flex-direction: column;
     transition: transform 0.3s;
     transform: translateX(500%);
+    font-size: 7vw;
   }
   body header nav .menu .logo {
     width: 25vw;
@@ -86,7 +265,6 @@ body {
   body aside p {
     position: relative;
     font-size: 18px;
-    margin-top: 0;
   }
   body .infor h3 {
     margin-top: 15;
@@ -98,6 +276,7 @@ body {
   }
   body .infor .tarjetas .card {
     margin-top: 5;
+    font-size: 4vw;
   }
   body .widget {
     margin-top: 15;
@@ -107,6 +286,27 @@ body {
   }
   body .widget iframe {
     height: 300;
+  }
+}
+/*medium-celulares*/
+/*large*/
+@media screen and (max-width: 992px) {
+  body aside {
+    margin-top: 25;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  body aside .carousel-inner {
+    position: relative;
+    width: 70vw;
+    margin-right: 10;
+    z-index: -1000;
+  }
+  body aside p {
+    position: relative;
+    font-size: 18px;
+    margin-top: 0;
   }
 }
 

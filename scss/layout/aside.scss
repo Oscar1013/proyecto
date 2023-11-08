@@ -3,16 +3,20 @@ aside{
     margin-top: 100;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     .carousel-inner{
-        position: relative;
         width: 700;
-        margin-left: 50;
-        margin-right: 50;
+        img{
+            position: relative;
+            width: 1;
+            margin-left: 50;
+            margin-right: 50;
+        }
     }
     p{
+        min-width: 100; 
         font-size: 2vw;
-        margin-top: 270;
+        margin-top: 100;
         color: #fff;
         display: flex;
         justify-content: center;

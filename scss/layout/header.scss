@@ -18,15 +18,16 @@ header{
             display: flex;
             flex-direction: row;
             align-items: center;
-            background-color: lightcoral;
+            background-color: $color-terciario;
             z-index: 100;
+            font-size: 1.25vw;
                 
             li{
                 padding: 1em;
             }
 
             .logo{
-                width: 100;
+                width: 3.75vw;
             }
         }
     }
