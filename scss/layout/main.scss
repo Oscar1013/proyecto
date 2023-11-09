@@ -1,3 +1,4 @@
+/*index*/
 /*video/frase*/
 main{
     h1{
@@ -25,3 +26,71 @@ main{
     }
 }
     /*video/frase*/
+    /*index*/
+
+    /*servicios*/
+    .serv-main{
+        display: flex;
+        .radio-inputs {
+            margin-top: 10;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0.5rem;
+            background-color: $color-primario;
+            box-sizing: border-box;
+            box-shadow: 0 0 0px 1px rgba(136, 40, 40, 0.06);
+            padding: 0.25rem;
+            width: 100%;
+            font-size: 1.5vw;
+            .radio{
+                flex: 1 1 auto;
+                text-align: center; 
+                input{
+                    display: none;
+                    &:checked + .name{
+                        background-color: $color-terciario;
+                        font-weight: 600;
+                    }
+                }
+                .name{
+                    display: flex;
+                    cursor: pointer;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0.5rem;
+                    border: none;
+                    padding: .5rem 0;
+                    color: $color-secundario;
+                    transition: all .15s ease-in-out; 
+                }
+            }
+          }
+    
+          .bf{
+            .corte{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10;
+                img{
+                    width: 35vw;
+                }
+    
+              }
+    
+              .info-barber{
+                color: $color-secundario;
+                padding-left: 50;
+                padding-right: 50;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                font-size: 2.5vw;
+                min-width: 175;
+              }
+          }
+    }
+    /*servicios*/

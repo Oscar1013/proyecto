@@ -1,11 +1,16 @@
+/*general*/
 @import './general/variables.scss';
 @import './general/reset.scss';
 @import './general/tipografias.scss';
+
+/*layout*/
 @import './layout/header.scss';
 @import './layout/aside.scss';
 @import './layout/main.scss';
 @import './layout/widget-1.scss';
 @import './layout/widget-2.scss';
 @import './layout/footer.scss';
+
+/*responsive*/
 @import './responsive/resposive.scss';
 

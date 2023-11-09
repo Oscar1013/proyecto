@@ -1,2 +1,9 @@
-$weight-titulo:600;
-$weight-parrafo:400;
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}

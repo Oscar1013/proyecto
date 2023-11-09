@@ -1,22 +1,21 @@
 /*carrusel*/
 aside{
     margin-top: 100;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    .carousel-inner{
-        width: 700;
-        img{
-            position: relative;
-            width: 1;
-            margin-left: 50;
-            margin-right: 50;
-        }
+    img{            
+        display: flex;
+        justify-content: center;
+        height: 800;
+        min-width: 250;
+        padding-left: 150;
+        padding-right: 150;
+        
     }
     p{
         min-width: 100; 
         font-size: 2vw;
-        margin-top: 100;
+        margin-top: 60;
         color: #fff;
         display: flex;
         justify-content: center;

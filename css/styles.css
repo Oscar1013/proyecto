@@ -1,3 +1,5 @@
+/*general*/
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
 * {
   font-family: "Chakra Petch", sans-serif;
   margin: 0;
@@ -23,6 +25,15 @@ body {
   background-color: rgba(0, 0, 0, 0.8431372549);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+/*layout*/
 header nav .toggle-menu {
   position: absolute;
   display: none;
@@ -55,23 +66,21 @@ header nav .menu .logo {
 /*carrusel*/
 aside {
   margin-top: 100;
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
-aside .carousel-inner {
-  width: 700;
-}
-aside .carousel-inner img {
-  position: relative;
-  width: 1;
-  margin-left: 50;
-  margin-right: 50;
+aside img {
+  display: flex;
+  justify-content: center;
+  height: 800;
+  min-width: 250;
+  padding-left: 150;
+  padding-right: 150;
 }
 aside p {
   min-width: 100;
   font-size: 2vw;
-  margin-top: 100;
+  margin-top: 60;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -81,6 +90,7 @@ aside p {
 }
 
 /*carrusel*/
+/*index*/
 /*video/frase*/
 main h1 {
   color: #fffbfc;
@@ -107,6 +117,69 @@ main .video iframe {
 }
 
 /*video/frase*/
+/*index*/
+/*servicios*/
+.serv-main {
+  display: flex;
+}
+.serv-main .radio-inputs {
+  margin-top: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.8431372549);
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(136, 40, 40, 0.06);
+  padding: 0.25rem;
+  width: 100%;
+  font-size: 1.5vw;
+}
+.serv-main .radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+.serv-main .radio-inputs .radio input {
+  display: none;
+}
+.serv-main .radio-inputs .radio input:checked + .name {
+  background-color: #fb3640;
+  font-weight: 600;
+}
+.serv-main .radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 0;
+  color: #fffbfc;
+  transition: all 0.15s ease-in-out;
+}
+.serv-main .bf .corte {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10;
+}
+.serv-main .bf .corte img {
+  width: 35vw;
+}
+.serv-main .bf .info-barber {
+  color: #fffbfc;
+  padding-left: 50;
+  padding-right: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5vw;
+  min-width: 175;
+}
+
+/*servicios*/
 /*tarjetas*/
 .infor {
   display: flex;
@@ -115,7 +188,7 @@ main .video iframe {
   align-items: center;
 }
 .infor h3 {
-  margin-top: 100;
+  margin-top: 25;
   font-size: 5vw;
 }
 .infor .tarjetas {
@@ -283,8 +356,9 @@ footer button:hover:after {
   text-decoration: underline;
 }
 
-/*medium-celulares*/
+/*responsive*/
 @media screen and (max-width: 768px) {
+  /*index*/
   body {
     /*header-navbar*/
     /*header-navbar*/
@@ -335,15 +409,14 @@ footer button:hover:after {
   }
   body aside {
     margin-top: 25;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
   }
-  body aside .carousel-inner {
-    position: relative;
-    width: 70vw;
-    margin-right: 10;
-    z-index: -1000;
+  body aside img {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 500;
+    padding-left: 37px;
+    padding-right: 37px;
   }
   body aside p {
     position: relative;
@@ -381,27 +454,26 @@ footer button:hover:after {
     text-align: center;
     font-size: 5vw;
   }
-}
-/*medium-celulares*/
-/*large*/
-@media screen and (max-width: 992px) {
-  body aside {
-    margin-top: 25;
+  /*index*/
+  /*SERVICIOS*/
+  .serv-main {
     display: flex;
     flex-direction: column;
+  }
+  .serv-main .radio-imputs {
     width: 100%;
   }
-  body aside .carousel-inner {
-    position: relative;
-    width: 70vw;
-    margin-right: 10;
-    z-index: -1000;
+  .serv-main .bf corte img {
+    width: 500vw;
   }
-  body aside p {
-    position: relative;
-    font-size: 18px;
-    margin-top: 0;
+  .serv-main .bf .info-barber {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
   }
+  /*SERVICIOS*/
 }
 
 /*# sourceMappingURL=styles.css.map */
