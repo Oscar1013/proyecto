@@ -132,8 +132,8 @@ main .video iframe {
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(136, 40, 40, 0.06);
   padding: 0.25rem;
-  width: 100%;
-  font-size: 1.5vw;
+  width: 350;
+  font-size: 3.5vw;
 }
 .serv-main .radio-inputs .radio {
   flex: 1 1 auto;
@@ -461,6 +461,7 @@ footer button:hover:after {
     flex-direction: column;
   }
   .serv-main .radio-imputs {
+    position: relative;
     width: 100%;
   }
   .serv-main .bf corte img {
