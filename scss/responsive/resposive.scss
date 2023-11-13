@@ -120,9 +120,16 @@
     .serv-main{
         display: flex;
         flex-direction: column;
-        .radio-imputs{
+        ul{
             position: relative;
-            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 10;
+            li{
+                width: 100%;
+                font-size: 6vw;
+                padding: 10;
+            }
         }
         .bf{
             corte{

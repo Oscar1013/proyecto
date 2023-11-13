@@ -122,52 +122,39 @@ main .video iframe {
 .serv-main {
   display: flex;
 }
-.serv-main .radio-inputs {
-  margin-top: 10;
+.serv-main ul {
   position: relative;
   display: flex;
   flex-direction: column;
-  border-radius: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.8431372549);
-  box-sizing: border-box;
-  box-shadow: 0 0 0px 1px rgba(136, 40, 40, 0.06);
-  padding: 0.25rem;
-  width: 350;
-  font-size: 2vw;
-}
-.serv-main .radio-inputs .radio {
-  flex: 1 1 auto;
-  text-align: center;
-}
-.serv-main .radio-inputs .radio input {
-  display: none;
-}
-.serv-main .radio-inputs .radio input:checked + .name {
   background-color: #fb3640;
-  font-weight: 600;
-}
-.serv-main .radio-inputs .radio .name {
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
   border-radius: 0.5rem;
-  border: none;
-  padding: 0.5rem 0;
-  color: #fffbfc;
-  transition: all 0.15s ease-in-out;
+  padding: 0.25rem;
+  box-sizing: border-box;
+  list-style: none;
+  margin-top: 10;
+  margin-left: 10;
 }
-.serv-main .bf .corte {
+.serv-main ul li {
+  width: 10vw;
+  text-align: center;
+  font-size: 2vw;
+  padding: 3.5rem 0;
+}
+.serv-main ul li:hover {
+  border-bottom: 2.5px solid #fffbfc;
+}
+
+.bf .corte {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10;
 }
-.serv-main .bf .corte img {
-  width: 35vw;
+.bf .corte img {
+  width: 50vw;
 }
-.serv-main .bf .info-barber {
+.bf .info-barber {
   color: #fffbfc;
   padding-left: 50;
   padding-right: 50;
@@ -180,6 +167,30 @@ main .video iframe {
 }
 
 /*servicios*/
+/*quienes somos*/
+.qs-main {
+  display: flex;
+}
+.qs-main img {
+  width: 50vw;
+  padding: 20;
+}
+.qs-main h2 {
+  color: #fffbfc;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 5vw;
+}
+.qs-main p {
+  color: #fffbfc;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+/*quienes somos*/
 /*tarjetas*/
 .infor {
   display: flex;
@@ -460,9 +471,16 @@ footer button:hover:after {
     display: flex;
     flex-direction: column;
   }
-  .serv-main .radio-imputs {
+  .serv-main ul {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10;
+  }
+  .serv-main ul li {
     width: 100%;
+    font-size: 6vw;
+    padding: 10;
   }
   .serv-main .bf corte img {
     width: 500vw;
