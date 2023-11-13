@@ -94,7 +94,7 @@ main{
                 justify-content: center;
                 align-items: center;
             }
-            
+
             h2{
                 color: $color-secundario;
                 display: flex;
@@ -115,3 +115,56 @@ main{
         }
         
     /*quienes somos*/
+
+    /*peluqueros*/
+    .p-main{
+        display: flex;
+        flex-direction: column;
+        img{
+            position: absolute;
+            width: 100%;
+            z-index: -10;
+        }
+        h2{
+            color: $color-secundario;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 8vw;
+            padding-left: 50;
+            padding-right: 50;
+            padding-top: 10;
+        }
+        p{
+            color: $color-secundario;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 4vw;
+            padding-left: 20;
+            padding-right: 20;
+            
+        }
+    }
+    .p-div{
+        margin-top: 100;
+        h2{
+            color: $color-secundario;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 5vw;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            li{
+                font-size: 3vw;
+            &:hover{
+                border-bottom: 3px solid $color-secundario;
+            }
+            }
+        }
+    }
+    /*peluqueros*/

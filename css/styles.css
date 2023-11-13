@@ -198,6 +198,59 @@ main .video iframe {
 }
 
 /*quienes somos*/
+/*peluqueros*/
+.p-main {
+  display: flex;
+  flex-direction: column;
+}
+.p-main img {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+}
+.p-main h2 {
+  color: #fffbfc;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 8vw;
+  padding-left: 50;
+  padding-right: 50;
+  padding-top: 10;
+}
+.p-main p {
+  color: #fffbfc;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 4vw;
+  padding-left: 20;
+  padding-right: 20;
+}
+
+.p-div {
+  margin-top: 100;
+}
+.p-div h2 {
+  color: #fffbfc;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 5vw;
+}
+.p-div ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.p-div ul li {
+  font-size: 3vw;
+}
+.p-div ul li:hover {
+  border-bottom: 3px solid #fffbfc;
+}
+
+/*peluqueros*/
 /*tarjetas*/
 .infor {
   display: flex;
