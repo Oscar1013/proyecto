@@ -64,7 +64,7 @@ main{
                 align-items: center;
                 padding: 10;
                 img{
-                    width: 50vw;
+                    width: 35vw;
                 }
     
               }
@@ -86,16 +86,23 @@ main{
     /*quienes somos*/
         .qs-main{
             display: flex;
+            margin-top: 100;
             img{
                 width: 50vw;
                 padding: 20;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
+            
             h2{
                 color: $color-secundario;
                 display: flex;
                 justify-content: center;
                 text-align: center;
                 font-size: 5vw;
+                padding-left: 25;
+                padding-right: 25;
             }
             p{
                 color: $color-secundario;
@@ -103,6 +110,7 @@ main{
                 justify-content: center;
                 text-align: center;
                 font-size: 2.5vw;
+                padding: 30;
             }
         }
         

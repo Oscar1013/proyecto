@@ -152,7 +152,7 @@ main .video iframe {
   padding: 10;
 }
 .bf .corte img {
-  width: 50vw;
+  width: 35vw;
 }
 .bf .info-barber {
   color: #fffbfc;
@@ -170,10 +170,14 @@ main .video iframe {
 /*quienes somos*/
 .qs-main {
   display: flex;
+  margin-top: 100;
 }
 .qs-main img {
   width: 50vw;
   padding: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .qs-main h2 {
   color: #fffbfc;
@@ -181,6 +185,8 @@ main .video iframe {
   justify-content: center;
   text-align: center;
   font-size: 5vw;
+  padding-left: 25;
+  padding-right: 25;
 }
 .qs-main p {
   color: #fffbfc;
@@ -188,6 +194,7 @@ main .video iframe {
   justify-content: center;
   text-align: center;
   font-size: 2.5vw;
+  padding: 30;
 }
 
 /*quienes somos*/
@@ -493,6 +500,37 @@ footer button:hover:after {
     font-size: 5vw;
   }
   /*SERVICIOS*/
+  /*quienes somos*/
+  .qs-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .qs-main img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .qs-main h2 {
+    font-size: 8vw;
+    padding-left: 5;
+    padding-right: 5;
+  }
+  .qs-main p {
+    font-size: 5.5vw;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .qs-aside {
+    padding-top: 0;
+  }
+  .qs-aside h3 {
+    text-align: center;
+    padding-left: 20;
+    padding-right: 20;
+    font-size: 8vw;
+  }
+  /*quienes somos*/
 }
 
 /*# sourceMappingURL=styles.css.map */

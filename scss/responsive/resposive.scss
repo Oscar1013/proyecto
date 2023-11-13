@@ -148,6 +148,40 @@
         }
     }
     /*SERVICIOS*/
+
+    /*quienes somos*/
+    .qs-main{
+        display: flex;
+        flex-direction: column;
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        h2{
+            font-size: 8vw;
+            padding-left: 5;
+            padding-right: 5;
+        }
+        p{
+            font-size: 5.5vw;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .qs-aside{
+        padding-top: 0;
+        h3{
+            text-align: center;
+            padding-left: 20;
+            padding-right: 20;
+            font-size: 8vw;
+        }
+
+    }
+    /*quienes somos*/
 }
 
 
