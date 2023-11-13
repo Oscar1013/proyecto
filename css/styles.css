@@ -201,31 +201,33 @@ main .video iframe {
 /*peluqueros*/
 .p-main {
   display: flex;
-  flex-direction: column;
+  padding: 20;
 }
 .p-main img {
-  position: absolute;
-  width: 100%;
+  width: 60%;
   z-index: -10;
 }
-.p-main h2 {
+.p-main .t-p h2 {
   color: #fffbfc;
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 8vw;
-  padding-left: 50;
-  padding-right: 50;
-  padding-top: 10;
+  font-size: 5vw;
+  padding-left: 10;
+  padding-right: 10;
 }
-.p-main p {
+.p-main .t-p p {
   color: #fffbfc;
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 4vw;
+  font-size: 2vw;
   padding-left: 20;
   padding-right: 20;
+}
+
+.p-aside {
+  margin-top: 100;
 }
 
 .p-div {
@@ -248,6 +250,7 @@ main .video iframe {
 }
 .p-div ul li:hover {
   border-bottom: 3px solid #fffbfc;
+  zoom: 1.5;
 }
 
 /*peluqueros*/
@@ -584,6 +587,39 @@ footer button:hover:after {
     font-size: 8vw;
   }
   /*quienes somos*/
+  /*peluqeuros*/
+  .p-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .p-main img {
+    width: 100%;
+  }
+  .p-main .t-p h2 {
+    font-size: 8vw;
+  }
+  .p-main .t-p p {
+    font-size: 4vw;
+  }
+  .p-aside {
+    margin-top: 0;
+  }
+  .p-div {
+    margin-top: 25;
+  }
+  .p-div h2 {
+    font-size: 8vw;
+  }
+  .p-div ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .p-div ul li {
+    font-size: 7vw;
+  }
+  /*peluqueros*/
 }
 
 /*# sourceMappingURL=styles.css.map */
