@@ -1,6 +1,6 @@
 /*carrusel*/
 aside{
-    margin-top: 100;
+    padding: 20;
     display: flex;
     flex-direction: column;
     img{            
@@ -8,13 +8,13 @@ aside{
         justify-content: center;
         height: 800;
         min-width: 250;
-        padding-left: 150;
-        padding-right: 150;
+        padding-left: 200;
+        padding-right: 200;
         
     }
     p{
         min-width: 100; 
-        font-size: 2vw;
+        font-size: $size-parrafo;
         margin-top: 60;
         color: #fff;
         display: flex;

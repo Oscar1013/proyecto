@@ -3,7 +3,7 @@
 main{
     h1{
             color: $color-secundario;
-            font-size: 4vw;
+            font-size: $size-titulo;
             display: flex;
             justify-content: center;
             text-align: center;
@@ -17,7 +17,8 @@ main{
             justify-content: center;
             align-items: center;
             iframe{
-                border-radius: 5%;
+                border-radius: 5rem;
+                @include borde;
                 width: 1250px;
                 height: 750px;
                 margin-left: 50px;
@@ -46,7 +47,7 @@ main{
             li{
                 width: 10vw;
                 text-align: center;
-                font-size: 2vw;
+                font-size: 3vw;
                 padding: 3.5rem 0;
                 &:hover{
                     border-bottom: 2.5px solid $color-secundario;
@@ -62,7 +63,6 @@ main{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 10;
                 img{
                     width: 35vw;
                 }
@@ -71,14 +71,18 @@ main{
     
               .info-barber{
                 color: $color-secundario;
-                padding-left: 50;
-                padding-right: 50;
+                padding-left: 10;
+                padding-right: 10;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 text-align: center;
-                font-size: 2.5vw;
-                min-width: 175;
+                h2{
+                    font-size: $size-titulo;
+                }
+                p{
+                    font-size: 4vw;
+                }
               }
         }
     
@@ -86,7 +90,7 @@ main{
     /*quienes somos*/
         .qs-main{
             display: flex;
-            margin-top: 100;
+            margin-top: 10;
             img{
                 width: 50vw;
                 padding: 20;
@@ -100,7 +104,7 @@ main{
                 display: flex;
                 justify-content: center;
                 text-align: center;
-                font-size: 5vw;
+                font-size: $size-titulo;
                 padding-left: 25;
                 padding-right: 25;
             }
@@ -109,7 +113,7 @@ main{
                 display: flex;
                 justify-content: center;
                 text-align: center;
-                font-size: 2.5vw;
+                font-size: $size-parrafo;
                 padding: 30;
             }
         }
@@ -130,7 +134,7 @@ main{
                 display: flex;
                 justify-content: center;
                 text-align: center;
-                font-size: 5vw;
+                font-size: $size-titulo;
                 padding-left: 10;
                 padding-right: 10;
             }
@@ -164,12 +168,36 @@ main{
             display: flex;
             justify-content: space-around;
             li{
-                font-size: 3vw;
-            &:hover{
-                border-bottom: 3px solid $color-secundario;
-                zoom: 1.5;
-            }
+                font-size: 4vw;
+                button{
+                    @include boton
+                }
             }
         }
     }
     /*peluqueros*/
+
+    /*contactanos*/
+    .main-c{
+        padding: 10;
+        color: $color-secundario;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            @include imagen;
+        }
+        h2{
+            font-size: $size-titulo;
+        }
+        .inf-con{
+            display: flex;
+            flex-direction: row;
+            padding: 20;
+            text-align: center;
+            font-size: $size-parrafo;
+        }
+    }
+    
+    /*contactanos*/

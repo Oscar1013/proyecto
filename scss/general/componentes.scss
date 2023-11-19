@@ -1,0 +1,19 @@
+%boton{
+    padding: 8px 15px;
+    height: 30px;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 10px;
+
+}
+
+@mixin boton($fondo,$letra) {
+    @extend %boton;
+    background: $fondo;
+    color: $letra;
+ }

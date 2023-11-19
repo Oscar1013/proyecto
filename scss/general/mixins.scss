@@ -1,0 +1,14 @@
+@mixin boton{
+    @extend %boton;
+    background-color: $color-secundario;
+    border-radius: 0.5rem;
+}
+
+@mixin imagen{
+    width: 1000px;
+}
+
+@mixin borde{
+    border: 2px solid $color-secundario;
+    border-radius: 0.5rem;
+}

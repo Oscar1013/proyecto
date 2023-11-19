@@ -33,7 +33,15 @@ p {
   font-weight: 400;
 }
 
+.p-div ul li button:hover {
+  background-color: #fb3640;
+  color: #fffbfc;
+}
+
 /*layout*/
+header {
+  margin-bottom: 10;
+}
 header nav .toggle-menu {
   position: absolute;
   display: none;
@@ -65,7 +73,7 @@ header nav .menu .logo {
 
 /*carrusel*/
 aside {
-  margin-top: 100;
+  padding: 20;
   display: flex;
   flex-direction: column;
 }
@@ -74,8 +82,8 @@ aside img {
   justify-content: center;
   height: 800;
   min-width: 250;
-  padding-left: 150;
-  padding-right: 150;
+  padding-left: 200;
+  padding-right: 200;
 }
 aside p {
   min-width: 100;
@@ -94,7 +102,7 @@ aside p {
 /*video/frase*/
 main h1 {
   color: #fffbfc;
-  font-size: 4vw;
+  font-size: 6vw;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -109,7 +117,9 @@ main .video {
   align-items: center;
 }
 main .video iframe {
-  border-radius: 5%;
+  border-radius: 5rem;
+  border: 2px solid #fffbfc;
+  border-radius: 0.5rem;
   width: 1250px;
   height: 750px;
   margin-left: 50px;
@@ -137,7 +147,7 @@ main .video iframe {
 .serv-main ul li {
   width: 10vw;
   text-align: center;
-  font-size: 2vw;
+  font-size: 3vw;
   padding: 3.5rem 0;
 }
 .serv-main ul li:hover {
@@ -149,28 +159,31 @@ main .video iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10;
 }
 .bf .corte img {
   width: 35vw;
 }
 .bf .info-barber {
   color: #fffbfc;
-  padding-left: 50;
-  padding-right: 50;
+  padding-left: 10;
+  padding-right: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 2.5vw;
-  min-width: 175;
+}
+.bf .info-barber h2 {
+  font-size: 6vw;
+}
+.bf .info-barber p {
+  font-size: 4vw;
 }
 
 /*servicios*/
 /*quienes somos*/
 .qs-main {
   display: flex;
-  margin-top: 100;
+  margin-top: 10;
 }
 .qs-main img {
   width: 50vw;
@@ -184,7 +197,7 @@ main .video iframe {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 5vw;
+  font-size: 6vw;
   padding-left: 25;
   padding-right: 25;
 }
@@ -193,7 +206,7 @@ main .video iframe {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 2vw;
   padding: 30;
 }
 
@@ -212,7 +225,7 @@ main .video iframe {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 5vw;
+  font-size: 6vw;
   padding-left: 10;
   padding-right: 10;
 }
@@ -246,14 +259,38 @@ main .video iframe {
   justify-content: space-around;
 }
 .p-div ul li {
-  font-size: 3vw;
+  font-size: 4vw;
 }
-.p-div ul li:hover {
-  border-bottom: 3px solid #fffbfc;
-  zoom: 1.5;
+.p-div ul li button {
+  background-color: #fffbfc;
+  border-radius: 0.5rem;
 }
 
 /*peluqueros*/
+/*contactanos*/
+.main-c {
+  padding: 10;
+  color: #fffbfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-c img {
+  width: 1000px;
+}
+.main-c h2 {
+  font-size: 6vw;
+}
+.main-c .inf-con {
+  display: flex;
+  flex-direction: row;
+  padding: 20;
+  text-align: center;
+  font-size: 2vw;
+}
+
+/*contactanos*/
 /*tarjetas*/
 .infor {
   display: flex;
@@ -263,7 +300,7 @@ main .video iframe {
 }
 .infor h3 {
   margin-top: 25;
-  font-size: 5vw;
+  font-size: 6vw;
 }
 .infor .tarjetas {
   margin-top: 10;
@@ -342,10 +379,12 @@ main .video iframe {
 }
 .widget h3 {
   color: #fff;
-  font-size: 2vw;
+  font-size: 6vw;
 }
 .widget iframe {
   width: 100%;
+  border: 2px solid #fffbfc;
+  border-radius: 0.5rem;
 }
 
 /*mapa*/
@@ -612,14 +651,22 @@ footer button:hover:after {
   }
   .p-div ul {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
   .p-div ul li {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   /*peluqueros*/
+  /*contactanos*/
+  .main-c .inf-con {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-c p {
+    font-size: 4vw;
+  }
+  /*contactanos*/
 }
 
 /*# sourceMappingURL=styles.css.map */

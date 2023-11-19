@@ -8,10 +8,11 @@
             align-items: center;
             h3{
                 color: #fff;
-                font-size: 2vw;
+                font-size: $size-titulo;
             }
             iframe{
                 width: 100%;
+                @include borde;
                 
             }                
         }
